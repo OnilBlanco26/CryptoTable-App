@@ -11,6 +11,7 @@ export default {
       cyan: "#14ffec",
       red: "#d6436e",
       green: "#25da72",
+      orange: "#fbbd23"
     },
     fontSize: {
       sm: "14px",

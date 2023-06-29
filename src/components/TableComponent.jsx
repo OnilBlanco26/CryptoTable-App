@@ -1,7 +1,15 @@
+import { useContext } from "react"
+import { CryptoContext } from "../context/CryptoContext"
 
 const TableComponent = () => {
+
+    const { test, setTest } = useContext(CryptoContext)
+
+    console.log(test)
+    
   return (
     <div className="flex flex-col mt-9 border border-gray-100 rounded">
+        <button onClick={() => setTest("modified value")}>Test change</button>
         <table className="w-full table-auto ">
             <thead className="capitalize text-base text-gray-100 font-medium border-b-[1px] border-gray-100">
                 <tr>

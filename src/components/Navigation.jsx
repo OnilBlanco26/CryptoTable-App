@@ -22,7 +22,7 @@ const Navigation = () => {
             w-full text-base text-center font-nunito m-2.5   border-0 cursor-pointer rounded capitalize font-semibold`
         }}
       >
-        Trending
+        Tendencias
       </NavLink>
       <NavLink
         to="/saved"
@@ -32,7 +32,7 @@ const Navigation = () => {
             w-full text-base text-center font-nunito m-2.5   border-0 cursor-pointer rounded capitalize font-semibold`
         }}
       >
-        Saved
+        Guardado
       </NavLink>
     </nav>
   );

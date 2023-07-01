@@ -33,7 +33,7 @@ const SearchInput = ({handleSearch}) => {
       type="text"
       name="search"
       className="w-full rounded bg-gray-200 placeholder:text-gray-100 pl-2 required outline-0 border border-transparent focus:border-orange"
-      placeholder="search here..."
+      placeholder="Busca Aqui..."
       value={searchText}
       onChange={handleInput}
     />
@@ -56,7 +56,7 @@ const SearchInput = ({handleSearch}) => {
           })
         : <div className="w-full h-full flex justify-center items-center">
           <div className="w-8 h-8 border-4 border-orange rounded-full border-b-gray-200 animate-spin" role="status" />
-          <span className="ml-2 ">Searching...</span>
+          <span className="ml-2 ">buscando...</span>
         </div>
       }
     </ul>

@@ -331,7 +331,8 @@ const CryptoDetails = () => {
 
             <div className="absolute bottom-8 right-8 flex items-center ">
               {data.links.repos_url.github[0] && (
-                <a className="text-lg px-1 "
+                <a
+                  className="text-lg px-1 "
                   target={"__blank"}
                   rel="noreferrer"
                   href={data.links.repos_url.github[0]}
@@ -360,7 +361,8 @@ const CryptoDetails = () => {
               )}
 
               {data.links.twitter_screen_name && (
-                <a className="text-lg px-1 "
+                <a
+                  className="text-lg px-1 "
                   target={"__blank"}
                   rel="noreferrer"
                   href={`https://twitter.com/${data.links.twitter_screen_name}`}
@@ -386,7 +388,8 @@ const CryptoDetails = () => {
                 </a>
               )}
               {data.links.subreddit_url && (
-                <a className="text-lg px-1 "
+                <a
+                  className="text-lg px-1 "
                   target={"__blank"}
                   rel="noreferrer"
                   href={data.links.subreddit_url}
@@ -414,7 +417,8 @@ const CryptoDetails = () => {
                 </a>
               )}
               {data.links.facebook_username && (
-                <a className="text-lg px-1 "
+                <a
+                  className="text-lg px-1 "
                   target={"__blank"}
                   rel="noreferrer"
                   href={`https://facebook.com/${data.links.facebook_username}`}

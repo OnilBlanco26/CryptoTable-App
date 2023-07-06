@@ -61,9 +61,9 @@ const TableComponent = () => {
                 <th className="py-1">precio</th>
                 <th className="py-1">volumen total</th>
                 <th className="py-1">cambio de cap mercado</th>
-                <th className="py-1">1H</th>
-                <th className="py-1">24H</th>
-                <th className="py-1">7D</th>
+                <th className="py-1 lg:table-cell hidden">1H</th>
+                <th className="py-1 lg:table-cell hidden">24H</th>
+                <th className="py-1 lg:table-cell hidden">7D</th>
               </tr>
             </thead>
             <tbody>
@@ -104,8 +104,8 @@ const TableComponent = () => {
                     <td
                       className={
                         data.price_change_percentage_1h_in_currency > 0
-                          ? "text-green py-4"
-                          : "text-red py-4"
+                          ? "text-green py-4 lg:table-cell hidden"
+                          : "text-red py-4 lg:table-cell hidden"
                       }
                     >
                       {Number(
@@ -115,8 +115,8 @@ const TableComponent = () => {
                     <td
                       className={
                         data.price_change_percentage_24h_in_currency > 0
-                          ? "text-green py-4"
-                          : "text-red py-4"
+                          ? "text-green py-4 lg:table-cell hidden"
+                          : "text-red py-4 lg:table-cell hidden"
                       }
                     >
                       {Number(
@@ -126,8 +126,8 @@ const TableComponent = () => {
                     <td
                       className={
                         data.price_change_percentage_7d_in_currency > 0
-                          ? "text-green py-4"
-                          : "text-red py-4"
+                          ? "text-green py-4 lg:table-cell hidden"
+                          : "text-red py-4 lg:table-cell hidden"
                       }
                     >
                       {Number(
@@ -164,6 +164,15 @@ const TableComponent = () => {
       </div>
     </>
   );
+};
+
+import PropTypes from "prop-types";
+
+//Implementation
+SaveBtn.propTypes = {
+  //props required
+
+  data: PropTypes.object.isRequired,
 };
 
 export default TableComponent;

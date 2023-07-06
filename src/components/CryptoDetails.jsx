@@ -462,4 +462,14 @@ const CryptoDetails = () => {
   );
 };
 
+import PropTypes from "prop-types";
+
+//Implementation
+HighLowIndicator.propTypes = {
+  //props required
+  current: PropTypes.number.isRequired,
+  high: PropTypes.number.isRequired,
+  low: PropTypes.number.isRequired,
+};
+
 export default CryptoDetails;

@@ -40,3 +40,12 @@ export const TrendingProvider = ({ children }) => {
     </TrendingContext.Provider>
   );
 };
+
+import PropTypes from "prop-types";
+
+//Implementation
+TrendingProvider.propTypes = {
+  //props required
+
+  children: PropTypes.array.isRequired,
+};

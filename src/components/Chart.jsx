@@ -148,4 +148,24 @@ const Chart = ({ id }) => {
   );
 };
 
+import PropTypes from "prop-types";
+
+//Implementation
+CustomTooltip.propTypes = {
+  payload: PropTypes.array.isRequired,
+  label: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  currency: PropTypes.string.isRequired,
+};
+
+ChartComponent.propTypes = {
+  data: PropTypes.array.isRequired,
+  currency: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+};
+
+Chart.propTypes = {
+  id: PropTypes.string.isRequired,
+};
+
 export default Chart;

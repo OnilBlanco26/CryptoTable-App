@@ -111,3 +111,11 @@ export const CryptoProvider = ({ children }) => {
     </CryptoContext.Provider>
   );
 };
+import PropTypes from "prop-types";
+
+//Implementation
+CryptoProvider.propTypes = {
+  //props required
+
+  children: PropTypes.array.isRequired,
+};

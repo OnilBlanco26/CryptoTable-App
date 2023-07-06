@@ -53,4 +53,15 @@ const TrendingCoin = ({data}) => {
   )
 }
 
+import PropTypes from 'prop-types'
+
+//Implementation
+TrendingCoin.propTypes = {
+//props required
+
+  data: PropTypes.object.isRequired,
+    
+    }
+
+
 export default TrendingCoin

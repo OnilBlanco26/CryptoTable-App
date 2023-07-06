@@ -39,8 +39,8 @@ export const StorageProvider = ({ children }) => {
             setAllCoins(newCoin)
             localStorage.setItem("coins", JSON.stringify(newCoin))
 
-            if(totalCoins.length > 0) {
-              getSavedData(totalCoins)
+            if(allCoins.length > 0) { 
+              getSavedData(allCoins)
             }
         }
     } 
@@ -97,3 +97,13 @@ export const StorageProvider = ({ children }) => {
     </StorageContext.Provider>
   );
 };
+
+import PropTypes from 'prop-types'
+
+//Implementation
+StorageProvider.propTypes = {
+//props required
+
+  children: PropTypes.array.isRequired,
+    
+    }

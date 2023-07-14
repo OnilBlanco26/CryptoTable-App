@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import searchIcon from "../assets/search-icon.svg";
+import searchIcon from "assets/search-icon.svg";
 import { CryptoContext } from "../context/CryptoContext";
 import debounce from "lodash.debounce";
 

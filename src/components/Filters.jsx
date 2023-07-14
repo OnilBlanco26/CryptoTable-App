@@ -1,6 +1,6 @@
 import Search from "./Search";
-import submitIcon from "../assets/submit-icon.svg";
-import selectIcon from "../assets/select-icon.svg";
+import submitIcon from "assets/submit-icon.svg";
+import selectIcon from "assets/select-icon.svg";
 import { useContext, useRef } from "react";
 import { CryptoContext } from "../context/CryptoContext";
 

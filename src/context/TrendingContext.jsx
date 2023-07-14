@@ -47,5 +47,5 @@ import PropTypes from "prop-types";
 TrendingProvider.propTypes = {
   //props required
 
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired,
 };

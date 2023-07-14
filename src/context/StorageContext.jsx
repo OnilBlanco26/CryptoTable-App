@@ -104,6 +104,6 @@ import PropTypes from 'prop-types'
 StorageProvider.propTypes = {
 //props required
 
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired,
     
     }

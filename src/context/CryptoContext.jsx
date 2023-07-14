@@ -117,5 +117,5 @@ import PropTypes from "prop-types";
 CryptoProvider.propTypes = {
   //props required
 
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired,
 };
